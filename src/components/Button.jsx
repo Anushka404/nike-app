@@ -6,12 +6,12 @@ const Button = ({label, iconURL}) => {
    border font-montserrat text-lg leading-none bg-coral-red
    text-white rounded-full border-coral-red">
     {label}
-    <img
+    {iconURL && <img // show img or arrow only if iconURL is provided
     src={iconURL}
     alt='arrow right icon'
     className="ml-2 rounded-full
     w-5 h-5"
-    />
+    />}
    </button>
   )
 }
