@@ -1,8 +1,13 @@
-import React from 'react'
-
-const ReviewCard = () => {
+const ReviewCard = ({imgURL, customerName, feedback, rating}) => {
   return (
-    <div>ReviewCard</div>
+    <div className="flex justify-center items-center flex-col">
+     <img 
+     src={imgURl}
+     alt="customer"
+     className="rounded-full object-cover w-[120px] h-[120px]"
+     />    
+        
+    </div>
   )
 }
 
